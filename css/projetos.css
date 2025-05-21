@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    grid-template-columns: 1fr;
+    gap: 20px; /* gap para melhor separação entre os itens */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(5, 5, 5);
+    min-height: 100vh;
+    line-height: 1.5;
+    color: white;
+}
+
+/* imagem usada no blur */
+
+.image-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.2;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Efeito de blur no fundo*/
+
+.blur {
+    height: 0;
+    width: 20rem;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    box-shadow: 0 0 500px 23px white;
+    rotate: -30deg;
+    z-index: -1;
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    max-width: 100%;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    z-index: 999;
+}
+
+nav a {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(98, 102, 102);
+    text-decoration: overline;
+}
+
+.list-items{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Card principal *importante* */
+.cards{
+    margin: 25px;
+    top: 9px;
+    position: relative;
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(rgb(56, 56, 56), black);
+    text-align: center;
+    color: rgb(182, 178, 178);
+    transition: 0.3s ease;
+    transition: opacity 0.10s ease;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+
+}
+
+.cards1{
+    background-image: url(/src/fundo.avif);
+    background-size: 290px;
+}
+
+.Content{
+    background-color: rgb(12, 12, 12);
+
+}
+
+/* Titulo principal acima dos cards */
+
+.Content .title{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Parte do botão "veja mais" */
+
+.button-github .apphotel {
+    display: flex;
+    position: relative;
+    top: 189px;
+    font-size: 12px;
+    border-radius: 30px;
+    width: 40%;
+    color: rgb(248, 247, 247);
+    height: 40%;
+    margin-left: 10px;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none; 
+    border: 1px solid rgb(58, 56, 56);
+}
+
+
+/* Rodapé */
+
+footer {
+    grid-area: footer;
+    max-width: 100%;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    background-color: #000000; /* Fundo consistente */
+}
+
+footer a {
+    color: rgb(11, 188, 233);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
