@@ -162,18 +162,17 @@ nav a:hover {
 footer {
     grid-area: footer;
     max-width: 100%;
-    position: fixed;
-    bottom: 0;
-    margin-left: 40%;
     color: white;
     padding: 1rem;
     text-align: center;
     background-color: #000000; /* Fundo consistente */
+    padding-top: 18;
 }
 
 footer a {
     color: rgb(11, 188, 233);
     text-decoration: none;
+    text-align: center;
 }
 
 footer a:hover {
