@@ -144,3 +144,21 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media(max-width:1000px){
+    .profile-pic{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .profile-pic{
+        display: none;
+    }
+
+    header h1{
+        margin-right: 10%;
+    }
+
+
+}
