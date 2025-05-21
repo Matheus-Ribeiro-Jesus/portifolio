@@ -51,8 +51,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
+    
     max-width: 100%;
     z-index: 999;
+}
+
+main {
+    grid-area: main;
+    max-width: 100%;
 }
 
 header h1 {
@@ -84,6 +90,8 @@ nav a:hover {
 .list-items{
     grid-area: main;
     display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
 }
@@ -154,6 +162,9 @@ nav a:hover {
 footer {
     grid-area: footer;
     max-width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-left: 40%;
     color: white;
     padding: 1rem;
     text-align: center;
