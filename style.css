@@ -124,15 +124,63 @@ main {
     z-index: 1;
 }
 
+.formacoes{
+    padding-left: 2%;
+}
+
+.formacoes h1{
+    font-size: 22px;
+}
+
+
+.escolaridade{
+    margin: 11px;
+    margin-left: -1px;
+}
+
+.linguagens{
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+}
+
+.imglling{
+    width: 78%;
+    margin: 15px;
+}
+
+.principal{
+    margin-top: 10px;
+}
+
+.principal h1{
+    font-size: 22px;
+}
+
+.contacts{
+    margin-top: 1%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts a{
+    color: rgb(148, 148, 148);
+}
+
+.contatos h1{
+    font-size: 22px;
+    margin-left: 2%;
+}
+
+
+
 /* Rodapé */
 
 footer {
     grid-area: footer;
     max-width: 100%;
-    color: white;
     padding: 1rem;
     text-align: center;
-    background-color: #000000; /* Fundo consistente */
 }
 
 footer a {
@@ -143,7 +191,9 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
+}   
+
+/* Quando quebra a 1100 pixels */
 
 @media(max-width:1100px){
     .profile-pic{
@@ -151,7 +201,14 @@ footer a:hover {
     }
 }
 
-@media(max-width:678px){
+/* Quando quebra a 678 pixels */
+
+@media(max-width: 759px){
+    .logo{
+        display: flex;
+        margin-left: -80px;
+    }
+
     .profile-pic{
         display: none;
     }
@@ -160,8 +217,15 @@ footer a:hover {
         margin-right: 10%;
     }
 
+    .descricao{
+    font-size: 1.5em;
+    max-width: 35rem;
+    color: grey;
+    }
+
     .conteudo { 
     z-index: none;
+    padding: 0;
     
     }
 
@@ -170,10 +234,19 @@ footer a:hover {
         font-weight: 600;
         letter-spacing: 0.3rem;
     }
+
     main {
     grid-area: main;
     max-width: 100%;
+    padding: 0;
     
+    }
+    .contacts{
+        margin-top: 1%;
+    }
+
+    .contatos{
+        margin-top: 10%;
     }
 
 }

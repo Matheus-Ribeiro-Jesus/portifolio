@@ -179,12 +179,12 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media(max-width: 1000px) {
-    .list-items{
+@media(max-width: 800px) {
+        .list-items{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
+
     footer{
         grid-area: footer;
         position: relative;
