@@ -11,7 +11,7 @@ body {
         "main"
         "footer";
     grid-template-columns: 1fr;
-    gap: 20px; /* gap para melhor separação entre os itens */
+    gap: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(5, 5, 5);
     min-height: 100vh;
@@ -97,6 +97,7 @@ nav a:hover {
 }
 
 /* Card principal *importante* */
+
 .cards{
     margin: 25px;
     top: 9px;
@@ -129,11 +130,10 @@ nav a:hover {
 
 /* Titulo principal acima dos cards */
 
-.Content .title{
-    font-size: 24px;
+.title{
+    font-size: 22px;
     display: flex;
     justify-content: center;
-
 }
 
 /* Parte do botão "veja mais" */
@@ -165,8 +165,12 @@ footer {
     color: white;
     padding: 1rem;
     text-align: center;
-    background-color: #000000; /* Fundo consistente */
-    padding-top: 18;
+    background-color: #000000;
+    padding-top: 18px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 footer a {
